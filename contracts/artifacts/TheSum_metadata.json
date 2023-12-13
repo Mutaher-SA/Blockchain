@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "returnsum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TestContract.sol": "TheSum"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TestContract.sol": {
+			"keccak256": "0xa2282e5e38dbe5bfd1bb1464877ddd8826f9ac44e69500f5d028ed769c3cfc1e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d5751bb147917badc2df178ba47e76fc4095788d386ad5408dfbce65a71724ef",
+				"dweb:/ipfs/QmZ7ejSuT8XzVG5e5k4aq1rKQgpnbMFUMV3WihHHt2wYdJ"
+			]
+		}
+	},
+	"version": 1
+}

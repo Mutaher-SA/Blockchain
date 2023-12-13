@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "gettheSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Sumof2Num.sol": "sumof2num"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Sumof2Num.sol": {
+			"keccak256": "0xf40d3291f2ba274ab8581668e51a22faf24aff1651db571dbb1d8852dbda5ba9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1745f17ee822859dd83d27ab351f77c466fc27ddeea9b9da913953511a0cf35b",
+				"dweb:/ipfs/QmXw1NgH5NzmwW6wFJJNnLGWX3m1s9kXCY9pMbKWST5pT8"
+			]
+		}
+	},
+	"version": 1
+}

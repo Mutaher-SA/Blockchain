@@ -1,0 +1,256 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "AllUsers",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "Acc_Name",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "Acc_Balance",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "Acc_Phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Acc_currency",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getAllUserAccount",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "Acc_Name",
+								"type": "string"
+							},
+							{
+								"internalType": "int256",
+								"name": "Acc_Balance",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "Acc_Phone",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Acc_currency",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Mapp.Accounts",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getUserAccount",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "Acc_Name",
+								"type": "string"
+							},
+							{
+								"internalType": "int256",
+								"name": "Acc_Balance",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "Acc_Phone",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Acc_currency",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Mapp.Accounts",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_userName",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "_Balance",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "_Phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_Currency",
+						"type": "string"
+					}
+				],
+				"name": "setAllUserAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_userName",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "_Balance",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "_Phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_Currency",
+						"type": "string"
+					}
+				],
+				"name": "setUserAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userAddress",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "Acc_Name",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "Acc_Balance",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "Acc_Phone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Acc_currency",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mapp.sol": "Mapp"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mapp.sol": {
+			"keccak256": "0xd77c4e23fa30d1aab9a4b6699a112c21d1b508cd3df3079c68f7086d99195ca5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://73bbb2c7b4035c21160acfbc4cd37f7ec2ecad6bdb338ffd8e426bb7976a94d1",
+				"dweb:/ipfs/QmQqDZiYNZDU5yPHgecGixt1BQavL5R7HQEMt83szJeR5m"
+			]
+		}
+	},
+	"version": 1
+}

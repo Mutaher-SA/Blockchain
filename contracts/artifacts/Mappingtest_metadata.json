@@ -1,0 +1,212 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "addValues",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allUsers",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "UName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "UBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "UPhone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Ucurrency",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getUserdata",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "UName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "UBalance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "UPhone",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Ucurrency",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Mappingtest.Accounts",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_userName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_userBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_userPhone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_userCurrency",
+						"type": "string"
+					}
+				],
+				"name": "setUersdata",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userAddress",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "UName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "UBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "UPhone",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Ucurrency",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mappingtest.sol": "Mappingtest"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mappingtest.sol": {
+			"keccak256": "0xf238b0232faa6e85145f534c81a427cc34c8c0adf3887e42d94b8eacd5722baa",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://896fe8ffd72c656047de1b4d83e938244ca602995717adb03aa98940435f3d98",
+				"dweb:/ipfs/QmbTT4BaEperhyrDJ9ksihBhWVV9BLhV58H7mRRUtLTqyi"
+			]
+		}
+	},
+	"version": 1
+}
