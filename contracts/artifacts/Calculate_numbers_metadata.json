@@ -60,9 +60,9 @@
 				"name": "ViewArray",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "string"
+						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "view",
@@ -134,11 +134,11 @@
 			]
 		},
 		"contracts/RestrictedArray.sol": {
-			"keccak256": "0xf065014652c435d600caf41c10d4a2a8dcf56c5276e250eb804c9fe0870f84ed",
+			"keccak256": "0x04e31120b40177ca5ed5bfa3b4a120c749cc2b32a34bc3059b8d1dc4d574dd2f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0fba1cb89ad07f6909758348b78e135b371942982b1c6718e7b99dbb3e583c65",
-				"dweb:/ipfs/QmRjxZmV72iRMQez882f1WQXfWCDAbHEAbq6PQo2xxL8bL"
+				"bzz-raw://456e511e19eda2ef61b7fdf7b9e5221e855db3202198468f3b0e48ac39dfe6dc",
+				"dweb:/ipfs/QmVszUZ33KMb8Qs4KXzJnQQE24t4htnjimANNBrK1ZW7fu"
 			]
 		}
 	},
