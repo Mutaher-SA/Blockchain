@@ -173,7 +173,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "band_admin",
+				"name": "bank_admin",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -221,11 +221,11 @@
 			]
 		},
 		"contracts/BankingSystem.sol": {
-			"keccak256": "0x907f92671e2c6e2cf6095c6be3d1223b7e8473c24c99555f4381030329ffc854",
+			"keccak256": "0xc201550a9cf1fc6e6d444ba74cfe2b8591e04ad5122f396c6c42c1490fa53a18",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b6bd7fc7de71eee755c5476896ed3e7644622a599c37bb92586e7192b8c5f577",
-				"dweb:/ipfs/QmVnu6oPnVEpefXhdoqTi11fHj4s8kokRLXhbubxHZBxHj"
+				"bzz-raw://8ceb4a0df140c90d6ff421d341d50f6120821f16eccc18755f6e886e631f7d31",
+				"dweb:/ipfs/QmVyxVSXfJMaABMd3NxxjNtMYgaDA8K8PaUfW9U62Kerhv"
 			]
 		}
 	},

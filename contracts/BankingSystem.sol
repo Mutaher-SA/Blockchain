@@ -14,7 +14,7 @@ contract Bank_System
         uint256 cust_balance;
         bool cust_state;
     }
-    address public band_admin;
+    address public bank_admin;
     mapping (address=>Stc_Account) public Map_cust;
     Counters.Counter _CurrentCustID;
 
@@ -23,7 +23,7 @@ contract Bank_System
     event EvtWithdraw(uint256 customerId, address indexed customerAddress, uint256 amount);
     constructor()
     {
-        band_admin=msg.sender;
+        bank_admin=msg.sender;
     }
 
     //receive() public payable 
@@ -35,7 +35,7 @@ contract Bank_System
 //function to add customer data
 modifier OnlyBankAdmin()
 {
-    require(msg.sender==band_admin, "Only Bank admin can add new customer");
+    require(msg.sender==bank_admin, "Only Bank admin can add new customer");
     _;
 }
 
