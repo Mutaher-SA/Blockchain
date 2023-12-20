@@ -6,44 +6,121 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "customerId",
+						"type": "uint256"
+					},
+					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "cust_address",
+						"name": "customerAddress",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "_cust_Balanace",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "Evt_deposit",
+				"name": "EvtAddMoney",
 				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "customerId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "customerAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "EvtNewwCust",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "customerId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "customerAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "EvtWithdraw",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "AddMoney",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_custName",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_cust_Balanace",
+						"name": "_Amount",
 						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "_cust_Address",
-						"type": "address"
 					}
 				],
-				"name": "AddCustomer",
+				"name": "Cust_Withdraw",
 				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GetCust_Balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -59,8 +136,23 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "cust_id",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "cust_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cust_balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "cust_state",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -69,19 +161,28 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_cust_name",
+						"type": "string"
 					}
 				],
-				"name": "deposit_Money",
+				"name": "NewAccount",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [],
+				"name": "band_admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -97,7 +198,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Bank_System.sol": "Bank_System"
+			"contracts/BankingSystem.sol": "Bank_System"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -119,12 +220,12 @@
 				"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu"
 			]
 		},
-		"contracts/Bank_System.sol": {
-			"keccak256": "0x6327873c32840c31230e9c31018dcbdeb75cff01369c7976691c345489a0fa91",
+		"contracts/BankingSystem.sol": {
+			"keccak256": "0x907f92671e2c6e2cf6095c6be3d1223b7e8473c24c99555f4381030329ffc854",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://58583fc88cb904cbc3d0ff359acfc9ac4a879c507a1e456861468152e1012157",
-				"dweb:/ipfs/QmXVmtNDYrNd1uWq6pCVWWprV9SHoGeU4RZxefkt5aJaff"
+				"bzz-raw://b6bd7fc7de71eee755c5476896ed3e7644622a599c37bb92586e7192b8c5f577",
+				"dweb:/ipfs/QmVnu6oPnVEpefXhdoqTi11fHj4s8kokRLXhbubxHZBxHj"
 			]
 		}
 	},
